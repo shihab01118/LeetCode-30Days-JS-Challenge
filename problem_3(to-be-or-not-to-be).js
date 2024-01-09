@@ -10,3 +10,6 @@ const expect = function(val) {
         }
     }
 };
+
+expect(5).toBe(5);
+expect(5).notToBe(5);
