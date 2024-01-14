@@ -6,10 +6,9 @@ const memoize = (fn) => {
         if (key in cache) {
             return cache[key];
         }
-        cache[key] = fn(args);
+        cache[key] = fn(...args);
         return cache[key];
     }
-
 }
 
 
